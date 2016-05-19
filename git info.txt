@@ -1,0 +1,41 @@
+GIT
+
+git commit -m 'text goes here'  /make a commit
+
+git status / shows you tracked files
+
+git diff / shows changes
+
+git add <specific file>  / called staging
+
+<then you commit>
+
+//If you dont do '-m' with a message then VIM txt editor will open up
+In VIM: hit esc then 'i' for insert to put your changes in where you can describe specific changes you made
+
+
+//
+
+git commit -a -m <  > / skips staging part
+
+
+----------------
+git add . 
+git commit -m "day of change"
+git remote add origin https://github.com/onrouteeyecare/website.git
+git push origin gh-pages
+git remote -v //lists all remotes and their urls
+
+
+
+Starting a brand new site??
+make new repositry on github
+go to folder in cmd
+type -> git init  // creates a git file that contains all the change info, created locally in folder
+type -> git add .   // adds files from current folder to git file
+type -> git commit -m "this was done"   // commits files and lets you type a message
+go to repositry website to find next line for cmd
+type -> git remote add origin https://github.com/<usnername>/<repository name.git>
+type -> git push origin master // not sure if you use 'master' or 'gh-pages' since I've been using the later
+
+enter username and password - should upload and you should then be able to see the files on the github website
