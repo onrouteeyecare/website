@@ -49,14 +49,14 @@ $(document).ready(function(){
         <span class="icon-bar"></span>
         <span class="icon-bar"></span> 
       </button>
-      <a class="navbar-brand" href="#">Logo</a>
+      <a class="navbar-brand" href="#"><img src="eye.png" width="50"></img></a>
      </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#about">ABOUT</a></li>
         <li><a href="#services">SERVICES</a></li>
-        <li><a href="#portfolio">PORTFOLIO</a></li>
-        <li><a href="#pricing">PRICING</a></li>
+   <!--     <li><a href="#portfolio">PORTFOLIO</a></li>
+        <li><a href="#pricing">PRICING</a></li>  -->
         <li><a href="#contact">CONTACT</a></li>
       </ul>
      </div>
@@ -64,12 +64,12 @@ $(document).ready(function(){
 </nav>
 
 <div class="jumbotron text-center">
-  <img src="eyecare.png" style="width:250px" >
-  <p>We bring care to you</p> 
-   <form class="form-inline">
+  <img src="eyecare.png" style="width:500px" >
+  <h3>We bring care to you</h3> 
+ <!--  <form class="form-inline">
     <input type="email" class="form-control" size="50" placeholder="Email Address">
     <button type="button" class="btn btn-danger">Subscribe</button>
-   </form>
+   </form>    -->
 </div>
 
 
@@ -79,7 +79,7 @@ $(document).ready(function(){
 		<h2>About</h2>
 		<h4>Lorem ipsum..</h4> 
 		<p>Lorem ipsum..</p>
-		<button class="btn btn-default btn-lg">Get in Touch</button>
+		<a href="#contact"><button class="btn btn-default btn-lg">Get in Touch</button></a>
 	</div>
 	<div class="col-sm-4">
 		<span class="glyphicon glyphicon-eye-open logo"></span>
@@ -106,23 +106,23 @@ $(document).ready(function(){
   <br>
   <div class="row">
     <div class="col-sm-4">
-      <span class="glyphicon glyphicon-off logo-small"></span>
-      <h4>POWER</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
+      <span class="glyphicon glyphicon-eye-close logo-small"></span>
+      <h4>Eye Examinations</h4>
+      <p>By professional licensed Optometrists</p>
     </div>
     <div class="col-sm-4">
-      <span class="glyphicon glyphicon-heart logo-small"></span>
-      <h4>LOVE</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
+      <span class="glyphicon glyphicon-sunglasses logo-small"></span>
+      <h4>Eye Glasses</h4>
+      <p>A large selection available</p>
     </div>
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-lock logo-small"></span>
-      <h4>JOB DONE</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
+      <h4>Mobile</h4>
+      <p>An Optomerist will visit you where you reside</p>
     </div>
     </div>
     <br><br>
-  <div class="row">
+<!--  <div class="row">
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-leaf logo-small"></span>
       <h4>GREEN</h4>
@@ -138,8 +138,10 @@ $(document).ready(function(){
       <h4>HARD WORK</h4>
       <p>Lorem ipsum dolor sit amet..</p>
     </div>
-  </div>
+  </div> -->
 </div>
+
+<!--
 <div class="container-fluid text-center bg-grey">
   <h2>Portfolio</h2>
   <h4>What we have created</h4>
@@ -166,39 +168,11 @@ $(document).ready(function(){
       </div>
     </div>
 </div>
+-->
 
-<h2>What our customers say</h2>
-<div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-  </ol>
 
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-    <h4>"This company is the best. I am so happy with the result!"<br><span style="font-style:normal;">Michael Roe, Vice President, Comment Box</span></h4>
-    </div>
-    <div class="item">
-      <h4>"One word... WOW!!"<br><span style="font-style:normal;">John Doe, Salesman, Rep Inc</span></h4>
-    </div>
-    <div class="item">
-      <h4>"Could I... BE any more happy with this company?"<br><span style="font-style:normal;">Chandler Bing, Actor, FriendsAlot</span></h4>
-    </div>
-  </div>
 
-  <!-- Left and right controls -->
-  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
+
 
 <div id="contact" class="container-fluid bg-grey">
   <h2 class="text-center">CONTACT</h2>
@@ -210,6 +184,7 @@ $(document).ready(function(){
       <p><span class="glyphicon glyphicon-envelope"></span> onrouteeyecare@gmail.com</p> 
     </div>
     <div class="col-sm-7">
+	<form action="https://formspree.io/onrouteeyecare@gmail.com" method="POST">
       <div class="row">
         <div class="col-sm-6 form-group">
           <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
@@ -224,6 +199,7 @@ $(document).ready(function(){
           <button class="btn btn-default pull-right" type="submit">Send</button>
         </div>
       </div> 
+	</form>
     </div>
   </div>
 </div>
@@ -233,7 +209,7 @@ $(document).ready(function(){
   <a href="#myPage" title="To Top">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a>
-  <p><a href="http://www.onrouteeyecare.ca" title="Visit w3schools">www.onrouteeyecare.ca<a></p> 
+  <p><a href="http://www.onrouteeyecare.ca" title="OnRoute Eyecare">www.onrouteeyecare.ca<a></p> 
 </footer>
 </body>
 </html>
